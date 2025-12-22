@@ -1,26 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <SankeyDiagram />
+    <!-- <threedChart /> -->
+    <!-- <parallelCoordinates/> -->
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SankeyDiagram from './components/SankeyDiagram.vue'
+// import parallelCoordinates from './components/parallelCoordinates.vue';
+// import threedChart from './components/threeChart.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    SankeyDiagram
+    // threedChart,
+    // parallelCoordinates
+}
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
